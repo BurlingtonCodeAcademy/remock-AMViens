@@ -1,0 +1,208 @@
+/******Style Sheet for continue reading page*******/
+
+body {
+    margin: 0;
+    background-color: lightseagreen
+}
+
+#header {
+    height: 200px;
+}
+
+#header h1{
+    text-align: center;
+    margin: 70px 0 0 0;
+    font-family: papyrus;
+}
+
+#header h5{
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 40px;
+    color: purple;
+}
+
+/* Main container for middleClass and sideClass elements */
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 60%;
+    margin-top: 60px;
+    margin-left: 20vw;
+}
+
+.middleClass {
+    flex: 1;
+    width: 65%;
+    margin-right: 5%;
+}
+
+.middleClass > h3 {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.middleClass > h6 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.middleClass > img {
+    width: 570px;
+    height: 320px;
+}
+
+.sideClass {
+    width: 30%;
+    margin-bottom: -10px;
+}
+
+.sideClass > h6 {
+    font-size: 16px;
+}
+
+.sideClass > p {
+    padding-bottom: 10px;
+}
+
+/* Blog page button */
+
+.blogButton {
+    background-color: darkblue;
+    width: 20px;
+    border: 1px solid black;
+    padding: 2px 7px;
+    border-radius: 6%;
+    color: yellow;
+}
+/* sideTwo helps adjust margins for added blog buttons */
+
+.sideTwo {
+    margin-top: 30px;
+}
+
+.sideTwo > h6 {
+    font-size: 16px;
+}
+
+.sideTwo > p {
+    margin-bottom: -40px;
+}
+
+.sideClass > img {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+
+.sideClass > div {
+    margin-bottom: 80px;
+}
+
+/* learn more buttons */
+
+.learnMore {
+    background-color: orange;
+    border: 1px solid black;
+    color: white;
+    font-weight: bold;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    position: absolute;
+}
+
+a:hover {
+    background-color: black;
+}
+
+/* Footer/Form/Icons Section */
+
+#footer {
+    width: 100%;
+    margin-top: 20px;
+    background-color: tan;
+
+}
+
+#footer h2{
+    text-align: center;
+    padding-top: 40px;
+}
+
+#formBox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin-left: 20vw;
+}
+
+#form {
+    flex: 1;
+    height: 250px;
+}
+
+.form-one {
+    display: flex;
+    width: 29vw;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    
+}
+
+.form-two {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-two textarea {
+    width: 28.5vw;
+    height: 140px;
+}
+
+.form-three {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sendMessage {
+    background-color: orange;
+    border: 1px solid black;
+    color: white;
+    font-weight: bold;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    position: absolute;
+}
+
+#links {
+    display: inline;
+    width: 29vw;
+    height: 150px;
+    margin-top: -15px;
+}
+
+#icons {
+    display: grid;
+    width: 29vw;
+    height: 150px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 2fr;
+    grid-gap: 1rem;
+}
+
+#icons > img {
+    width: 25px;
+    height: 25px;
+}
