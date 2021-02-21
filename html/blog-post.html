@@ -1,21 +1,22 @@
+<!-- Home Page HTML Doc -->
+
 <!DOCTYPE HTML>
 <html>
   <head>
     <title>Learn More</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link href="blog-post.css" rel="stylesheet">
+    <link href="/styles/blog-post.css" rel="stylesheet">
   </head>
-  <body>
-    <a href="index.html" style="color: darkcyan">T*H*I*S*<span style="color: brown">L*I*N*K*S</span><span style="color: darkorange">*H*O*M*E</span></a>
-    <header id="header">
+  <body><!-- Header Section -->
+    <a href="/html/index.html" header id="header">
       <h1>Continue Blogging Here</h1>
       <h5>I Hate Blogs</h5>
       <hr style="width:60%;text-align:center">
       <hr style="width:60%;text-align:center">
-    </header>
-    <main id="main">
-      <div class="onlyClass">
+    </header></a><!-- Main container holds column elements -->
+    <main id="mainContent">
+      <div class="mainColumn">
         <h3>Is anyone else getting hungry?</h3>
         <img src="/images/image8.jpg">
         <h4>Nothing Else Matters</h4>
@@ -89,34 +90,34 @@
           So hold me until it sleeps Until it sleeps
         </p>
       </div>
-    </main>
+    </main><!-- Footer Section -->
     <footer id="footer">
       <h2>Questions of laughter, Sign Here...</h2>
       <div id="formBox">
         <div id="form">
           <form>
             <div class="form-one">
-              <input style="width: 195px;" type="text" id="name" name="name" placeholder="Name">
-              <input style="width: 195px; height: 20px;" type="text" id="email" name="email" placeholder="Email">
+              <input style="width: 48%;" type="text" onfocus="this.value=''" value="Name...">
+              <input style="width: 48%;" type="text" onfocus="this.value=''" value="email...">
             </div>
             <div class="form-two">
-              <textarea name="Message" form="form-area">Message...</textarea>
+              <textarea onfocus="this.value=''" form="form-area">Message...</textarea>
             </div>
-            <div class="form-three">
-              <a href="somelink" button class="sendMessage">SEND MESSAGE</button></a>
+            <div class="form-three"><!-- Form submission alerts user and reloads current page -->
+              <a href="/html/blog-post.html" onclick="return confirm('Are you sure?')" button class="sendMessage">SEND MESSAGE</button></a>
             </div>
           </form>
         </div>
         <div id="links">
           <p>Lorem ipsum, dolor sit am elit. Ut quis, rem dolores rerum maiores asperiores inventore ipsum vero neque omnis incidunt dignissimos necessitatibus? Nobis, velit.</p>
           <div id="icons">
-            <img src="/icons/location.png">
-            <img src="/icons/twitter.png">
-            <img src="/icons/phone.png">
-            <img src="/icons/instagram.png">
-            <img src="/icons/email.png">
-            <img src="/icons/dribble.png">
-            <img src="/icons/facebook.png">
+            <div id="iconText"><img src="/icons/location.png">  Home Address<br>12345 lincoln lawyer<br></div>
+            <div id="iconText"><img src="/icons/twitter.png">@twitter</div>
+            <div id="iconText"><img src="/icons/phone.png"> 303-000-0000</div>
+            <div id="iconText"><img src="/icons/instagram.png"> #instagram</div>
+            <div id="iconText"><img src="/icons/email.png"> email@somewhere.com</div>
+            <div id="iconText"><img src="/icons/dribble.png"> Team Baller</div>
+            <div id="iconText"><img src="/icons/facebook.png"> facebook</div>
           </div>
         </div>
       </div>

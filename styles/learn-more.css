@@ -1,9 +1,11 @@
-/******Style Sheet for continue reading page*******/
+/************Style Sheet for Learn More Page***********/
 
 body {
     margin: 0;
-    background-color: lightseagreen
+    background-color: royalblue;
 }
+
+/* Header Section */
 
 #header {
     height: 200px;
@@ -19,12 +21,12 @@ body {
     font-size: 20px;
     text-align: center;
     padding-bottom: 40px;
-    color: purple;
+    color: orangered;
 }
 
-/* Main container for middleClass and sideClass elements */
+/* Main container holds left and right column elements */
 
-#main {
+#mainContent {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -33,42 +35,57 @@ body {
     margin-left: 20vw;
 }
 
-.middleClass {
-    flex: 1;
+/* Right column elements */
+
+.rightColumn {
     width: 65%;
-    margin-right: 5%;
+    margin-left: 5%;
+    text-align: left;
 }
 
-.middleClass > h3 {
+.rightColumn > h3 {
     text-align: left;
     font-size: 24px;
     margin-bottom: 40px;
 }
 
-.middleClass > h6 {
+.rightColumn > h6 {
     font-size: 16px;
     margin-bottom: 10px;
 }
 
-.middleClass > img {
-    width: 570px;
-    height: 320px;
+.rightColumn > img {
+    width: 580px;
+    height: 300px;
 }
 
-.sideClass {
+/* Left column elements */
+
+.leftColumn {
+    flex: 1;
     width: 30%;
     margin-bottom: -10px;
 }
 
-.sideClass > h6 {
+.leftColumn > h6 {
     font-size: 16px;
 }
 
-.sideClass > p {
+.leftColumn > p {
     padding-bottom: 10px;
 }
 
-/* Blog page button */
+.leftColumn > img {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+
+.leftColumn > div {
+    margin-bottom: 80px;
+}
 
 .blogButton {
     background-color: darkblue;
@@ -78,33 +95,22 @@ body {
     border-radius: 6%;
     color: yellow;
 }
-/* sideTwo helps adjust margins for added blog buttons */
 
-.sideTwo {
+/* bottom left column elements */
+
+.bottomLeft {
     margin-top: 30px;
 }
 
-.sideTwo > h6 {
+.bottomLeft > h6 {
     font-size: 16px;
 }
 
-.sideTwo > p {
+.bottomLeft > p {
     margin-bottom: -40px;
 }
 
-.sideClass > img {
-    width: 100px;
-    height: 100px;
-    float: left;
-    margin-right: 15px;
-    margin-bottom: 5px;
-}
-
-.sideClass > div {
-    margin-bottom: 80px;
-}
-
-/* learn more buttons */
+/* Learn More Buttons */
 
 .learnMore {
     background-color: orange;
@@ -120,7 +126,8 @@ body {
 }
 
 a:hover {
-    background-color: black;
+    background-color: white;
+    color: orange;
 }
 
 /* Footer/Form/Icons Section */
@@ -129,6 +136,7 @@ a:hover {
     width: 100%;
     margin-top: 20px;
     background-color: tan;
+    padding-bottom: 30px;
 
 }
 
@@ -146,6 +154,7 @@ a:hover {
 
 #form {
     flex: 1;
+    width: 27vw;
     height: 250px;
 }
 
@@ -170,7 +179,7 @@ a:hover {
 
 .form-three {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-start
 }
 
 .sendMessage {
@@ -202,7 +211,7 @@ a:hover {
     grid-gap: 1rem;
 }
 
-#icons > img {
+#iconText > img {
     width: 25px;
     height: 25px;
 }

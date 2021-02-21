@@ -6,12 +6,15 @@ body {
     animation-name: colorChange;
     animation-duration: 3s;
 }
+
 /* Animation for background color change */
 
 @keyframes colorChange {
     from {background-color: thistle;}
     to {background-color: burlywood;}
 }
+
+/* Header elements*/
 
 #header {
     height: 200px;
@@ -29,20 +32,22 @@ body {
     padding-bottom: 40px;
     color: darkmagenta;
 }
-/* Any topClass element references the first section with three photos */
 
-#topClass {
+/* Header2 elements references the first section with three photos */
+
+#header2 {
     height: 400px;
     margin-top: 3px;
     position: relative;
     margin-bottom: 40px;
 }
 
-#topClass > h2{
+#header2 > h2{
     text-align: center;
     margin-top: 75px;
     font-family: papyrus;
 }
+
 /* three images */
 
 figure {
@@ -58,9 +63,10 @@ figure > img {
     width: 260px;
     height: 150px;
 }
+
 /* figcaptions */
 
-#topClass > div {
+#header2 > div {
     display: flex;
     width: 60%;
     text-align: center;
@@ -70,34 +76,39 @@ figure > img {
     margin-right: 20%;
 }
 
-#topClass > div > figcaption {
+#header2 > div > figcaption {
     width: 20%;
 }
+
 /* anchor tags */
 
-#topClass > a {
+#header2 > a {
     margin-top: 60px;
 }
 
-.middleClass > a {
+.leftColumn > a {
     margin-top: 30px;
 }
+
 /* Buttons */
 
-.buttons {
-    background-color: #4CAF50;
-    border-radius: 3%;
+#header2 > a {
     color: white;
     font-weight: bold;
-    padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: block;
-    font-size: 16px;
+    font-size: 24px;
     width: 20%;
     position: absolute;
     left: 37.5%;
 }
+
+#header2 > a:hover {
+    background-color: thistle;
+    color: black;
+}
+
 /* continue reading buttons */
 
 .continueReading {
@@ -128,6 +139,8 @@ figure > img {
     position: absolute;
 }
 
+/* Divider under headers */
+
 #divider {
     display: flex;
     justify-content: center;
@@ -136,9 +149,10 @@ figure > img {
     height: 250px;
     background-color: chartreuse;
 }
-/* Main section holds first section of column elements */
 
-#main {
+/* MainContent section holds first section of column elements */
+
+#mainContent {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -146,9 +160,10 @@ figure > img {
     margin-top: 60px;
     margin-left: 20vw;
 }
-/* Second section of column elements */
 
-#main2 {
+/* bottomContainer of column elements */
+
+#bottomContainer {
     display: flex;
     justify-content: space-evenly;
     width: 60%;
@@ -156,9 +171,9 @@ figure > img {
     margin-top: -40px;
 }
 
-/* middleClass section of main */
+/* leftColumn of main content section */
 
-.middleClass {
+.leftColumn {
     flex: 1;
     width: 65%;
     margin-right: 5%;
@@ -168,20 +183,20 @@ section > h6 {
     font-size: 16px;
 }
 
-.middleClass > h3 {
+.leftColumn > h3 {
     text-align: left;
     font-size: 24px;
     margin-bottom: 40px;
 }
 
-.middleClass > h6 {
+.leftColumn > h6 {
     font-size: 16px;
     margin-bottom: 10px;
 }
 
-/* bottomClass section of main2 */
+/* bottomLeft section of bottom container */
 
-.bottomClass {
+.bottomLeft {
     flex: 1;
     width: 65%;
     margin-right: 5%;
@@ -189,50 +204,50 @@ section > h6 {
     padding-top: 80px;
 }
 
-.bottomClass > h3 {
+.bottomLeft > h3 {
     text-align: left;
     font-size: 24px;
     margin-top: 50px;
     margin-bottom: 40px;
 }
 
-.bottomClass > a {
+.bottomLeft > a {
     margin-top: 30px;
 }
 
-.bottomClass > img {
+.bottomLeft > img {
     width: 560px;
     height: 320px;
 }
 
-/* sideClass for both main and main2 */
+/* rightColumn for both main and bottom containers */
 
-.sideClass {
+.rightColumn {
     width: 30%;
     margin-bottom: -10px;
     border-bottom: 1px solid gray;
 }
 
-.sideTwo {
+.blogsRight {
     margin-top: 30px;
 }
 
-.sideTwo > h6 {
+.blogsRight > h6 {
     font-size: 16px;
 }
 
-.sideTwo > p {
+.blogsRight > p {
     padding-bottom: 20px;
 }
 
-.sideClassTwo {
+.bottomRight {
     width: 30%;
     margin-top: 60px;
     border-top: 1px solid gray;
     padding-top: 30px;
 }
 
-.sideClass > p {
+.rightColumn > p {
     padding-bottom: 20px;
 }
 
@@ -246,11 +261,11 @@ section > h6 {
 }
 
 a:hover {
-    background-color: black;
+    background-color: white;
     color: orange;
 }
 
-.sideClassTwo > img {
+.bottomRight > img {
     width: 100px;
     height: 100px;
     float: left;
@@ -258,7 +273,7 @@ a:hover {
     margin-bottom: 5px;
 }
 
-.sideClassTwo > div{
+.bottomRight > div{
     margin-bottom: 80px;
 }
 
@@ -268,6 +283,7 @@ a:hover {
     width: 100%;
     margin-top: 60px;
     background-color: tan;
+    padding-bottom: 30px;
 }
 
 #footer h2{
@@ -340,7 +356,7 @@ a:hover {
     grid-gap: 1rem;
 }
 
-#icons > img {
+#iconText > img {
     width: 25px;
     height: 25px;
 }
